@@ -377,13 +377,13 @@ a{
 
    /* ----- FOOTER ----- */
    footer{
+       width: 100%;
+       background-color: black;
+       font-size: 10px;
+       text-align: center;
+    }
     
-    width: 100%;
     
-    background-color: black;
-    font-size: 10px;
-    text-align: center;
-   }
 
    
 
@@ -503,7 +503,7 @@ a{
             align-items: center;
             justify-content: center;
         }
-l        :root{
+        :root{
             --primary-text-size: 2rem;
             --normal-text-size: 3rem;
             --heading-text-size: 2.2rem;
