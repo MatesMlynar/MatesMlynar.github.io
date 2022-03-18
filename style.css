@@ -143,6 +143,25 @@ a{
 }
 
 
+.sluzbyClick{
+    font-size: 1.3em;
+    color: yellow;
+    position: relative;
+    top: 50px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    transition: all .8s;    
+}
+
+.sluzbyClick:hover
+{
+    border: 2px solid yellow;
+    color: black;
+    background-color: yellow;
+}
+
+
 .item-RightSide{
     font-size: 1.5rem;
     font-weight: bold;
@@ -167,6 +186,7 @@ a{
     margin: 0 auto;
     position: relative;
     top: 12em;
+    height: 50vh;
 }
        
         
