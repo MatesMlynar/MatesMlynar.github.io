@@ -1,0 +1,521 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+    font-weight: bold;
+}
+
+/* ----- ROOTS ----- */
+
+:root
+{
+    --primary-text: yellow;
+    --marginFlex: 1.5%;
+    --primary-text-size: 2.8rem;
+    --normal-text-size: 3.5rem;
+    --heading-text-size: 2.2rem;
+    --page2-normal-text-size: 1.3rem;
+    --web-item-p: 1rem;
+    --web-item-h2: 1.5rem;
+    --navbar-font-size: 1.7rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* ----- NAVBAR ----- */
+    
+
+
+
+span{
+    color: yellow;      
+}
+
+
+
+header
+{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}
+
+li
+{
+    list-style: none;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 60px;
+}
+
+
+.nav-branding{
+    font-size: 2.3rem;
+}
+
+.nav-link{
+    transition: color 0.3s ease;
+}
+    
+
+.nav-link:hover{
+    color: yellow;
+}
+
+.nav-item1{
+    transition: 0.3s ease-in-out;
+}
+    
+.nav-item1:hover{
+    transform: scale(1.2);
+}
+
+ 
+
+
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+    
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    background-color: white;
+}
+ 
+
+
+
+
+
+
+
+
+/* ----- PAGE1 ----- */
+
+.Page1{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(images/navy-blue-smoky-art-abstract-background.jpg);
+    min-height: 100vh;
+    background-position:center;
+    background-size: cover;
+    
+}
+
+
+.item-RightSide{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+    
+
+.nav-item{
+    border-right: 2px solid yellow;
+}
+    
+    
+a{
+    text-decoration: none;
+}
+    
+    
+    
+    
+.main{
+        
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: 12em;
+}
+       
+        
+        
+        
+        
+    
+.primary-text{
+    color: var(--primary-text);
+    font-size: var(--primary-text-size);
+    font-weight: bold;
+}
+
+.normal-text{
+    font-size: var(--normal-text-size);
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+.main-left-side{
+    width: 100%;
+    
+}
+    
+   
+    
+
+
+
+    /* ----- PAGE2 ----- */
+    
+    .Page2{
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(images/22589.jpg);
+        min-height: 100vh;
+        background-position:center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+
+    /* .normal-text-page2{
+        font-size: 2vw;
+        padding-top: 2%;
+        font-weight: bold;
+        width: 60%;
+    } */
+
+
+    .main-page2{
+        display: flex;
+        width:75%;
+        gap: 35px;
+    }
+        
+
+    
+    
+
+    .heading{
+        font-size: var(--heading-text-size);
+        color: yellow;
+       
+    }
+        
+
+   
+
+    .empty{
+        border-right: 2px solid yellow;
+        
+    }
+
+    .WhoAmI{
+        align-self: center;
+        font-size: var(--page2-normal-text-size);
+    }
+        
+        
+
+
+    /* ----- PAGE3 ----- */
+
+    .Page3{
+        
+        
+        min-height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(images/navy-blue-smoky-art-abstract-background.jpg);
+        background-position:center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        
+     
+    }
+
+
+
+    .page3-flexContainer
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        gap: 50;
+    }
+    
+       
+    .svg
+    {      
+        width: 200px;
+    }
+        
+
+    .item{
+        width: 50%;
+        text-align: center;
+    }
+        
+    .web-item{
+        width: 80%;
+    }
+    .web-item-h2{
+       width: 100%;
+        text-align: center;
+        padding-top: 3%;
+        font-size: var(--web-item-h2);
+        
+    }
+    
+    .web-item-p{
+        
+        padding: 8% 0%;
+        font-size: var(--web-item-p);
+        text-align: center;
+    }
+
+    
+
+    /* -----PAGE4----- */
+    .Page4{
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.3)),url(images/22589.jpg);
+        min-height: 100vh;
+        background-position:center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+        
+    
+   .page4-container{
+    display: flex;
+    gap: 35px;
+    }   
+    
+    
+    
+    .heading
+    {
+        padding: 2em 0;
+    }
+   
+    
+
+
+
+   /* ----- FOOTER ----- */
+   footer{
+    
+    width: 100%;
+    color: black;
+    background-color: #222;
+    font-size: 10px;
+    text-align: center;
+   }
+
+   
+
+    
+    
+    
+    
+    
+    /* -----MEDIA----- */
+
+   /* :root
+{
+    --primary-text: yellow;
+    --marginFlex: 1.5%;
+    --primary-text-size: 2rem;
+    --normal-text-size: 3.8rem;
+    --heading-text-size: 2.2rem;
+    --page2-normal-text-size: 1.3rem;
+} */
+
+
+    
+
+    @media only screen and (max-width: 768px)
+    {
+        .hamburger{
+            display: block;
+        }
+           
+
+
+        .hamburger.active .bar:nth-child(2){
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        
+        .hamburger.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+
+        .nav-menu{
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            gap: 0;
+            flex-direction: column;
+            background-color: #262626;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            border-top: 1px solid yellow;
+        }
+
+        .nav-item1{
+            margin: 5px 0;
+        }
+
+        .nav-menu.active{
+            left: 0;
+        }
+
+        .heading
+        {
+            color: var(--primary-text);
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+    @media  only screen and (max-width: 580px) {
+        :root{
+            --primary-text-size:1.2rem;
+            --normal-text-size: 2.8rem;
+            --heading-text-size: 2.2rem;
+            --page2-normal-text-size: 1.3rem;
+        }
+
+       
+        .primary-text{
+            font-size: 2.3rem;
+        }
+        
+        .normal-text{
+            font-size: 2.8rem;
+        }
+
+
+        .left-side-contact{
+            padding: 0;
+        }   
+            
+        .heading
+        {
+            padding: 0;
+        }
+
+        
+        
+    }
+
+   
+
+    @media only screen and (max-width: 963px) {
+        .main-page2{
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+l        :root{
+            --primary-text-size: 2rem;
+            --normal-text-size: 3rem;
+            --heading-text-size: 2.2rem;
+            --page2-normal-text-size: 1.3rem;
+            --navbar-font-size: 1.3rem;
+        }
+
+        
+        .svg{
+            height: 100px
+        }
+
+        .empty{
+            display: none;
+        }
+
+        
+        .page3-flexContainer{
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           gap: 50;
+           top: 0px;
+        }
+            
+        
+
+        .page4-container{
+            
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }  
+
+
+        .heading{
+            padding: 0;
+        }
+    }
+    
+
+     @media only screen and (min-width: 1280px) {
+        :root{
+            --primary-text-size: 2.6rem;
+            --normal-text-size: 4rem;
+            --heading-text-size: 2.2rem;
+            --page2-normal-text-size: 1.3rem;
+        }
+
+
+
+    } 
