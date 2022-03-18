@@ -151,7 +151,8 @@ a{
     border: 2px solid white;
     border-radius: 15px;
     padding: 10px 30px;
-    transition: all .8s;    
+    transition: all .8s;  
+    background-color: transparent;
 }
 
 .sluzbyClick:hover
@@ -219,15 +220,30 @@ a{
     /* ----- PAGE2 ----- */
     
     .Page2{
-        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)),url(images/22589.jpg);
+       
         min-height: 100vh;
         background-position:center;
         background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        
     }
         
+
+    .Page2 video
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+        filter: brightness(50%);
+    }
+
 
     /* .normal-text-page2{
         font-size: 2vw;
@@ -241,6 +257,7 @@ a{
         display: flex;
         width:75%;
         gap: 35px;
+        z-index: 100;
     }
         
 
@@ -319,7 +336,8 @@ a{
     }
     
     .web-item-p{
-        
+        width: 80%;
+        margin: 0 auto;
         padding: 8% 0%;
         font-size: var(--web-item-p);
         text-align: center;
@@ -343,6 +361,7 @@ a{
    .page4-container{
     display: flex;
     gap: 35px;
+    z-index: 100;
     }   
     
     
@@ -360,8 +379,8 @@ a{
    footer{
     
     width: 100%;
-    color: black;
-    background-color: #222;
+    
+    background-color: black;
     font-size: 10px;
     text-align: center;
    }
@@ -415,7 +434,7 @@ a{
             top: 70px;
             gap: 0;
             flex-direction: column;
-            background-color: #262626;
+            background-color: black;
             width: 100%;
             text-align: center;
             transition: 0.3s;
